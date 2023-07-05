@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #FFCDB0;
+}
+
+.container div{
+    background: #FFFFFF;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container-user{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
