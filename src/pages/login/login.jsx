@@ -19,7 +19,7 @@ const Login = ()=>{
                     <input type="email" id="email" name="email" required placeholder="Email"/>
                     <input type="password" name="password" required placeholder="Password"/>
                     <div className="container-form-dates-buttons">
-                        <Link to="/dldlep">
+                        <Link to="/registration">
                             <button type="button">SIGN UP</button>
                         </Link>
                         <input type="submit" value="LOGIN"/>
