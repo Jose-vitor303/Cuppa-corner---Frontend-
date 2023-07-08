@@ -1,0 +1,123 @@
+.container-login{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    background:#FFFFFF;
+    height: 65vh;
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container-form {
+    text-align: center;
+    margin-top: 2rem;
+    height: 100%;
+    width: 100%;
+}
+
+.container-title{
+    font-size: 1.8rem;
+    border-radius: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.container-form a{
+    text-decoration: none;
+}
+
+.container-image{
+    background-image: url("/src/assets/nathan-dumlao-6VhPY27jdps-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.container-form-dates{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 3rem;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.container-form-dates #email{
+    margin-bottom: 1.5rem;
+}
+
+.container-form-dates input[type="email"], .container-form-dates input[type="password"]{
+    padding: 0.5rem 0.7rem;
+    border-bottom: 1px solid gray;
+    outline: none;
+}
+
+.container-form-dates input[type = "submit"], .container-form-dates-buttons button{
+    padding: 0.5rem 1.4rem;
+    border-radius: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    color: #FFFFFF;
+    background: #FFA16C;
+    cursor: pointer;
+}
+
+.container-form-dates input[type = "submit"]:hover, .container-form-dates-buttons button:hover{
+    background: #FFFFFF;
+    color: #FFA16C;
+    border: 1px solid #FFA16C;
+}
+
+.container-form-dates-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3.8rem;
+
+}
+
+
+@media  screen and (max-width: 425px) {
+
+    .container-login{
+        height: 80vh;
+        width: 80%;
+    }
+
+    .container-form-dates-buttons{
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .container-form-dates-buttons input{
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container-image {
+        background-image: none;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 800px) {
+    .container-form-dates-buttons{
+        margin-top: 1.3rem;
+        justify-content: center;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+
+    .container-form-dates-buttons input{
+        margin-bottom: 0.7rem;
+    }
+
+
+}
+
