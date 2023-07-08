@@ -1,13 +1,4 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: #FFCDB0;
-}
-
-.container div{
+.container-name{
     background: #FFFFFF;
     padding: 1rem 2rem;
     font-size: 1.5rem;
