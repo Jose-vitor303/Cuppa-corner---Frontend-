@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom"
 import "./Home.css"
-import Logo from "../components/logo.jsx";
 
 
 
@@ -9,10 +8,13 @@ const Home = ()=>{
 
     return (
        <section className="container">
-           <Logo />
+           <div className="container-name">
+               <span style={{color : '#FFA16C'}}>Purr'</span>
+               <span style={{color : 'black'}}>Coffee</span>
+           </div>
            <section className="container-user">
-               <Link to="/login">Login</Link>
-               <Link to="/daksds">Error</Link>
+               <Link to="/login"  id="login-link">LOGIN</Link>
+               <Link to="/daksds" id="signup-link">SIGN UP</Link>
            </section>
        </section>
     )
