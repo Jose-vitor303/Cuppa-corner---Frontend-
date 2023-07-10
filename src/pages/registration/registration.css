@@ -1,7 +1,3 @@
-.form-user {
-    display: flex;
-    flex-direction: column;
-}
 
 .container-registration-image{
     background-image: url("./src/assets/jonathan-borba-vk2Xwf23rOQ-unsplash.jpg");/*https://unsplash.com/pt-br/fotografias/vk2Xwf23rOQ?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink*/
@@ -10,25 +6,22 @@
     background-repeat: no-repeat;
 }
 
-.container-account{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    background:#FFFFFF;
-    height: 65vh;
-    position: absolute;
-    width: 70%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.space-buttons input[type="text"], .space-buttons input[type="password"], .space-buttons input[type="email"]{
+    margin-bottom: 1.3rem;
 }
 
 
+@media screen and (max-width: 715px){
 
+    .container-registration-image{
+        background-image: none;
+    }
 
+}
 
-.form-user input[type="text"], .form-user input[type="email"], .form-user input[type="password"]{
-    padding: 0.5rem 0.7rem;
-    border-bottom: 1px solid gray;
-    outline: none;
-
+@media screen and (max-width: 900px) {
+    .container-registration{
+        height: 90%;
+        width: 85%;
+    }
 }

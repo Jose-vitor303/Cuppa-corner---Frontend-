@@ -5,14 +5,14 @@ import {Link} from "react-router-dom";
 const Login = ()=>{
 
     return (
-        <section className="container-login">
-            <section className="container-image">
+        <section className="container-users">
+            <section className="container-login-image">
             </section>
             <section className="container-form">
                 <Link to="/">
                     <div className="container-title">
-                        <span style={{color : '#FFA16C'}}>Purr'</span>
-                        <span style={{color : 'black'}}>Coffee</span>
+                        <span style={{color : '#FFA16C', cursor: "pointer"}}>Purr'</span>
+                        <span style={{color : 'black', cursor: "pointer"}}>Coffee</span>
                     </div>
                 </Link>
                 <form className="container-form-dates">
