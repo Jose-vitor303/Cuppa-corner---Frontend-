@@ -1,0 +1,27 @@
+
+.container-registration-image{
+    background-image: url("./src/assets/jonathan-borba-vk2Xwf23rOQ-unsplash.jpg");/*https://unsplash.com/pt-br/fotografias/vk2Xwf23rOQ?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink*/
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.space-buttons input[type="text"], .space-buttons input[type="password"], .space-buttons input[type="email"]{
+    margin-bottom: 1.3rem;
+}
+
+
+@media screen and (max-width: 715px){
+
+    .container-registration-image{
+        background-image: none;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .container-registration{
+        height: 90%;
+        width: 85%;
+    }
+}

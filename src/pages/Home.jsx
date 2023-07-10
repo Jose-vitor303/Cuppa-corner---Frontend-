@@ -14,7 +14,7 @@ const Home = ()=>{
            </div>
            <section className="container-user">
                <Link to="/login"  id="login-link">LOGIN</Link>
-               <Link to="/daksds" id="signup-link">SIGN UP</Link>
+               <Link to="/registration" id="signup-link">SIGN UP</Link>
            </section>
        </section>
     )
