@@ -1,0 +1,243 @@
+.box-header{
+    background: white;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items : stretch;
+    height: 25vh;
+    border-bottom: 1px solid gray;
+}
+
+.box-header-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-bottom: 0.5rem;
+}
+
+.box-header-list li{
+    list-style-type: none;
+    font-weight: lighter;
+    color: #a9a0a0;
+    cursor: pointer;
+}
+
+.box-header-list li:hover{
+    color: #FFA16C;
+}
+
+
+.box-title{
+
+    font-size: 2rem;
+    padding-left: 1rem;
+    font-weight: bold;
+}
+
+.box-mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background-color: #FFA16C;
+    margin: 8px;
+}
+
+.box-mobile-menu{
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.box-header-logo{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.box-hamburger{
+    list-style-type: none;
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.box-hamburger-container{
+    height: 5vh;
+    position: relative;
+    cursor: pointer;
+}
+
+.box-hamburger-container div{
+    width: 32px;
+    height: 2px;
+    background-color: #FFA16C;
+    margin: 8px;
+    position: absolute;
+}
+
+.box-hamburger-horizontal{
+    transform: rotate(-45deg);
+}
+.box-hamburger-vertical{
+    transform: rotate(45deg);
+}
+
+.list-element li{
+    border-bottom: 1px solid #9a9292;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-element li:hover, .box-data-button{
+    color: #FFA16C;
+}
+
+.list-element{
+    height: 100vh;
+}
+
+.box-data{
+
+    display: none;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    flex-direction: row;
+    /*flex-wrap: wrap;*/
+    margin-right: auto;
+    margin-left: auto;
+    /*width: 300px;*/
+    max-width: 350px;
+    padding-top: 2rem;
+    padding-right: 0.6rem;
+    padding-left: 0.6rem;
+    margin-top: 1.5rem;
+}
+
+.box-data-image{
+    width: 40%;
+}
+
+.box-data-image img{
+    /*max-width: 50%;*/
+    height: 150px;
+    width: 100px;
+}
+
+.box-data-details{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.box-values, .box-data-sizes{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.box-data-sizes{
+    margin-top: 0.6rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.box-data-sizes button{
+    background-color: #FFFFFF;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0.5rem;
+    width: 60px;
+}
+
+.box-data-button{
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 2rem;
+    background-color: #FFFFFF;
+    border: 1px solid gray;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+}
+
+.add{
+    color: #FFFFFF;
+    background-color: #FFA16C;
+    border: 0;
+    cursor: default;
+
+}
+
+.box-values span{
+    color : #FFA16C;
+}
+
+.box-data-text{
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+    font-size: 0.8rem;
+    text-align: justify;
+
+}
+
+
+@media screen and (min-width: 999px){
+
+    .box-header-list, .box-hamburger-container, .box-mobile-menu{
+        display: none;
+    }
+
+    .box-header-logo{
+        display: block;
+        height: 100vh;
+        padding-left: 2.5rem;
+        width: 20%;
+        border-right: 1px solid gray;
+    }
+
+    .box-header{
+        background-color: white;
+        height: 100vh;
+        padding-top: 0;
+        border-bottom: none;
+    }
+
+
+    .box-hamburger{
+        position: relative;
+        width: 200px;
+        height: 0;
+    }
+
+
+    .list-element li{
+
+        border-bottom: none;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        display: block;
+        align-items: center;
+        justify-content: left;
+    }
+
+    .list-element{
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box-title{
+        padding-left: 0;
+    }
+
+
+
+}

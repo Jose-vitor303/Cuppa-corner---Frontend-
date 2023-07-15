@@ -8,10 +8,12 @@ const Home = ()=>{
 
     return (
        <section className="container">
-           <div className="container-name">
-               <span style={{color : '#FFA16C'}}>Purr'</span>
-               <span style={{color : 'black'}}>Coffee</span>
-           </div>
+           <Link to="home">
+               <div className="container-name">
+                   <span style={{color : '#FFA16C'}}>Purr'</span>
+                   <span style={{color : 'black'}}>Coffee</span>
+               </div>
+           </Link>
            <section className="container-user">
                <Link to="/login"  id="login-link">LOGIN</Link>
                <Link to="/registration" id="signup-link">SIGN UP</Link>
