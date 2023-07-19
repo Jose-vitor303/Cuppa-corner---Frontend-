@@ -7,6 +7,7 @@ import Login from "./pages/login/login.jsx";
 import Error from "./pages/error/ErrorPage";
 import Registration from "./pages/registration/registration.jsx";
 import Menu from "./components/menu.jsx";
+import List from "./pages/menu/List.jsx";
 
 
 const router = createBrowserRouter([
@@ -27,7 +28,11 @@ const router = createBrowserRouter([
     {
         path : "home",
         element : <Menu />
-    }
+    },
+    {
+        path : "package",
+        element : <List />
+    },
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
