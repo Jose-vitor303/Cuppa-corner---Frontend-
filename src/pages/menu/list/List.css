@@ -1,0 +1,85 @@
+.content{
+    height: 100%;
+    background-color: white;
+    padding-top: 2rem;
+
+}
+
+.content-personal{
+    text-align: left;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #9a9292;
+}
+
+.content-personal h1, .content-information h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.content-information h2{
+    font-size: 19px;
+}
+
+.content-personal span, .content-information span, .content-prices p{
+    color: #9a9292;
+}
+
+.content-delivery button{
+    border-radius: 20px;
+    padding: 1rem;
+    background-color: #FFFFFF;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+.content-delivery button:hover{
+    color: #FFFFFF;
+    background-color: #3C3C3C;
+}
+
+.content-products{
+    height: 25vh;
+    border-bottom: 1px solid #9a9292;
+}
+
+.content-products-column{
+    display: flex;
+    align-items: center;
+
+}
+
+.content-flex{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-bottom: 1.5rem;
+    padding-right: 1rem;
+}
+
+
+.content-button{
+    width: 90vw;
+    color: #FFA16C;
+    background-color: white;
+    border: 1px solid #FFA16C;
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 1rem 1rem 2.5rem;
+    cursor: pointer;
+}
+
+.content-description{
+    /*background-color: red;*/
+    padding: 1rem 1.5rem;
+}
+
+.content-button:hover{
+    color: white;
+    background-color: #FFA16C;
+}
+
+.content-values{
+    padding-top: 2rem;
+}

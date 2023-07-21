@@ -1,0 +1,165 @@
+
+.box-header{
+    background: white;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items : stretch;
+    height: 25vh;
+    border-bottom: 1px solid gray;
+}
+
+.box-header-mobile{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.box-title{
+    font-size: 2rem;
+    padding-left: 1rem;
+    font-weight: bold;
+}
+
+.box-hamburger{
+    list-style-type: none;
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    height: auto;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.box-hamburger-container{
+    height: 5vh;
+    position: relative;
+    cursor: pointer;
+}
+
+.box-hamburger-container div{
+    width: 32px;
+    height: 2px;
+    background-color: #FFA16C;
+    margin: 8px;
+    position: absolute;
+}
+
+.box-hamburger-horizontal{
+    transform: rotate(-45deg);
+}
+.box-hamburger-vertical{
+    transform: rotate(45deg);
+}
+
+.list-element{
+    height: 100vh;
+}
+
+.list-element li{
+    border-bottom: 1px solid #9a9292;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-element li:hover{
+    color: #FFA16C;
+}
+
+.box-mobile-menu{
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.box-mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background-color: #FFA16C;
+    margin: 8px;
+}
+
+.box-header-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-bottom: 0.5rem;
+}
+
+.box-header-list li{
+    list-style-type: none;
+    font-weight: lighter;
+    color: #a9a0a0;
+    cursor: pointer;
+}
+
+.box-header-list li:hover{
+    color: #FFA16C;
+}
+
+
+
+@media screen and (min-width: 768px){
+
+
+    .box-header{
+        background-color: white;
+        height: 100vh;
+        border-bottom: 0;
+        padding-top: 0;
+        width: 100%;
+    }
+
+    .box-header-mobile{
+        display: block;
+        padding-left: 2.5rem;
+        background-color: #FFFFFF;
+        /*background-color: green;*/
+        /*width: auto;*/
+    }
+
+    .box-title{
+        padding-left: 0;
+    }
+
+    .box-hamburger{
+        position: relative;
+        /*background-color: red;*/
+        width: 100%;
+    }
+
+    .box-hamburger-container, .box-mobile-menu{
+        display: none;
+    }
+
+    .list-element{
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .list-element li{
+        border-bottom: none;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        display: block;
+        cursor: pointer;
+    }
+
+    .box-header-list{
+        display: none;
+    }
+
+
+
+}
+
+

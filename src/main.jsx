@@ -7,7 +7,7 @@ import Login from "./pages/login/login.jsx";
 import Error from "./pages/error/ErrorPage";
 import Registration from "./pages/registration/registration.jsx";
 import Menu from "./components/menu.jsx";
-import List from "./pages/menu/List.jsx";
+import List from "./pages/menu/list/List.jsx";
 
 
 const router = createBrowserRouter([
