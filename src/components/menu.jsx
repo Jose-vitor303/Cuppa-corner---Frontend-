@@ -3,6 +3,7 @@ import "./menu.css"
 import coffee from "../assets/coffee1.png"
 import {Link} from "react-router-dom";
 import Header from "./header/Header.jsx";
+import List from "../pages/menu/list/List.jsx";
 
 
 
@@ -13,12 +14,18 @@ const Menu = ()=>{
     const [changeText, setChangeText] = useState("Add to car")
     const [changeStyle, setChangeStyle] = useState("box-data-button")
     const [overviewPackage, setOverviewPackage] = useState(false)
+    const [widthWindow, setWidthWindow] = useState(window.innerWidth)
     const [amount, setAmount] = useState(0)
+    const [list, setList] = useState(false)
 
     const changePhrase = ()=>{
         setChangeText("Added to cart");
         setChangeStyle("box-data-button add")
         setOverviewPackage(true)
+    }
+
+    const listProducts = ()=>{
+        setList(true)
     }
 
 
@@ -51,6 +58,26 @@ const Menu = ()=>{
                             <button onClick={increment}  disabled={amount === maxValue}>+</button>
                         </div>
                     </section>
+                    <section className="box-data-details">
+                        <div className="box-values">
+                            <h4>Cappuccino</h4>
+                            <span>$ 4.98</span>
+                        </div>
+
+                        <p className="box-data-text">The combination of coffee, milk, and palm sugar makes this drink have a delicious</p>
+                        <div className="box-data-sizes">
+                            <span>Size</span>
+                            <button className="box-sizes-button">Small</button>
+                            <button className="box-sizes-button">Large</button>
+                        </div>
+                        <button className={changeStyle} onClick={widthWindow < 768 ? changePhrase : listProducts}>{changeText}</button>
+                    </section>
+                </section>
+                <section className="box-information">
+                    <div className="box-data-image">
+                        <img className="image" src={coffee} alt="coffee"/>
+                        {/*<input type="number" name="quantity" min="0" value="0"/>*/}
+                    </div>
                     <section className="box-data-details">
                         <div className="box-values">
                             <h4>Cappuccino</h4>
@@ -138,6 +165,12 @@ const Menu = ()=>{
                         </Link>
                     </div>
                 </footer>
+            )}
+
+            {list && (
+                <section className="footer-desktop">
+                    <List/>
+                </section>
             )}
 
         </section>

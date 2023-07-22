@@ -138,8 +138,7 @@
 
     .box{
         display: grid;
-        grid-template-columns: 20% 60% 20%; /* Three equal columns */
-
+        grid-template-columns: 20% 55% 25%; /* Three equal columns */
     }
 
     .box-data{
@@ -147,13 +146,27 @@
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
-        background-color: red;
         justify-content: space-around;
-        height: 70vh;
-        padding-top: 0;
+        height: 83vh;
         margin-top: auto;
-        padding-bottom: 2.5rem;
+        overflow-y : scroll;
+        padding: 0;
+        background-color: #F8F8F8;
+        border-left: 1px solid #9a9292;
     }
+
+    .box-data::-webkit-scrollbar {
+        width: 0.5vw; /* Largura da barra de rolagem */
+    }
+
+    .box-data::-webkit-scrollbar-track {
+        background: #F8F8F8;
+    }
+
+    .box-data::-webkit-scrollbar-thumb {
+        background: #FFA16C;
+    }
+
 
     .box-information{
         background-color: #FFFFFF;
@@ -162,11 +175,16 @@
         align-items: center;
         justify-content: space-between;
         border-radius: 10px;
-        min-width: 353px;
+        min-width: 320px;
         width: 30%;
         padding-top: 1rem;
         margin-top: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        border: 1px solid #F8F8F8;
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
     }
+
 
     .box-data-details{
 
@@ -212,13 +230,13 @@
         width: 60px;
     }
 
-    .box-footer{
-        display: none;
-    }
-
     .box-data-button{
-
         margin-top: 1rem;
         padding: 0.5rem;
     }
+
+    .footer-desktop{
+        /*background-color: red;*/
+    }
 }
+

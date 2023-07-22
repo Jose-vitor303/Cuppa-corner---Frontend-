@@ -5,12 +5,6 @@ const List = ()=>{
 
     return(
         <section className="content">
-            {/*<svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-chevron-down" width="24"*/}
-            {/*     height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"*/}
-            {/*     stroke-linecap="round" stroke-linejoin="round">*/}
-            {/*    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>*/}
-            {/*    <path d="M6 9l6 6l6 -6"></path>*/}
-            {/*</svg>*/}
             <div className="content-personal">
                 <h1>José Vitor</h1>
                 <span>jvitorfacanha@Outlook.com</span>
@@ -25,12 +19,10 @@ const List = ()=>{
                 <button>Take away</button>
             </div>
             <div className="content-products content-flex content-products-column">
-
                 <div className="vasco">
                     <img alt=""></img>
                     <h1>Test</h1>
                 </div>
-
 
                 <div className="content-description">
                     <div style={{marginBottom : "2rem"}}>
