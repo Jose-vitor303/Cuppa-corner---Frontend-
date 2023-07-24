@@ -1,12 +1,12 @@
 
 .box-header{
     background: white;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items : stretch;
-    height: 18vh;
+    height: 14vh;
     border-bottom: 1px solid gray;
 }
 

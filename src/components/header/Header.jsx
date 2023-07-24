@@ -1,27 +1,12 @@
-import React, {useEffect, useState} from "react"
+import React, {useState} from "react"
+import { useWindowWidth } from "../window/Window.jsx";
 import "./Header.css"
 
 
 const Header = ()=>{
 
+    const windowWidth = useWindowWidth();
     const [openMenu, setOpenMenu] = useState(false)
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-
-    useEffect(()=>{
-
-        const handleResize = () => {
-            setWindowWidth(window.innerWidth);
-        };
-
-        window.addEventListener('resize', handleResize);
-
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-
-    }, [])
-
 
     return(
         <header className="box-header">

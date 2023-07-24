@@ -159,7 +159,7 @@
 
     .box-data{
         display: grid;
-        grid-template-columns: 50% 25%; /* Three equal columns */
+        grid-template-columns: 50%; /* Three equal columns */
     }
 
     .box-data{
@@ -256,6 +256,17 @@
 
 @media screen and (min-width: 768px){
 
+    .box-menu-list{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .box-menu-list-active{
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
+
+
 }
 
 
@@ -263,7 +274,12 @@
 
     .box {
         display: grid;
-        grid-template-columns: 20% 55% 25%; /* Three equal columns */
+        grid-template-columns: 20% 80%; /* Three equal columns */
+    }
+
+
+    .box-menu-list-active{
+        grid-template-columns: 70% 30%;
     }
 
     .box-data-information {

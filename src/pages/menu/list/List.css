@@ -115,16 +115,16 @@
         background-color: white;
     }
 
-    .content-personal h1{
-        padding-top: 2rem;
-    }
-
     .content-personal{
         text-align: left;
         margin-bottom: 1rem;
         padding-left: 1rem;
         padding-bottom: 1rem;
         border-bottom: 1px solid #9a9292;
+    }
+
+    .content-personal h1{
+        padding-top: 1rem;
     }
 
 }

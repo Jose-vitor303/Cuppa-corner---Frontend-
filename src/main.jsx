@@ -8,6 +8,7 @@ import Error from "./pages/error/ErrorPage";
 import Registration from "./pages/registration/registration.jsx";
 import Menu from "./components/menu.jsx";
 import List from "./pages/menu/list/List.jsx";
+import { Window } from "./components/window/Window.jsx";
 
 
 const router = createBrowserRouter([
@@ -37,6 +38,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+      <Window>
+          <RouterProvider router={router} />
+      </Window>
   </React.StrictMode>,
 )
