@@ -46,113 +46,124 @@ const Menu = ()=>{
     return (
         <section className="box">
             <Header/>
-            <main className="box-data">
-                <section className="box-information">
-                    <section className="box-product-image">
+            <main className="box-data-information">
+                <section>
+                    <ul className="box-header-list">
+                        <li>Coffee</li>
+                        <li>Food</li>
+                        <li>Snack</li>
+                        <li>Dessert</li>
+                    </ul>
+                </section>
+                <section className="box-data">
+                    <section className="box-information">
+                        <section className="box-product-image">
+                            <div className="box-data-image">
+                                <img className="image" src={coffee} alt="coffee"/>
+                            </div>
+                            <div className="box-amount">
+                                <button onClick={decrement} disabled={amount === minValue}>-</button>
+                                <span>{amount}</span>
+                                <button onClick={increment}  disabled={amount === maxValue}>+</button>
+                            </div>
+                        </section>
+                        <section className="box-data-details">
+                            <div className="box-values">
+                                <h4>Cappuccino</h4>
+                                <span>$ 4.98</span>
+                            </div>
+
+                            <p className="box-data-text">The combination of coffee, milk, and palm sugar makes this drink have a delicious</p>
+                            <div className="box-data-sizes">
+                                <span>Size</span>
+                                <button className="box-sizes-button">Small</button>
+                                <button className="box-sizes-button">Large</button>
+                            </div>
+                            <button className={changeStyle} onClick={widthWindow < 768 ? changePhrase : listProducts}>{changeText}</button>
+                        </section>
+                    </section>
+                    <section className="box-information">
                         <div className="box-data-image">
                             <img className="image" src={coffee} alt="coffee"/>
+                            {/*<input type="number" name="quantity" min="0" value="0"/>*/}
                         </div>
-                        <div className="box-amount">
-                            <button onClick={decrement} disabled={amount === minValue}>-</button>
-                            <span>{amount}</span>
-                            <button onClick={increment}  disabled={amount === maxValue}>+</button>
-                        </div>
-                    </section>
-                    <section className="box-data-details">
-                        <div className="box-values">
-                            <h4>Cappuccino</h4>
-                            <span>$ 4.98</span>
-                        </div>
+                        <section className="box-data-details">
+                            <div className="box-values">
+                                <h4>Cappuccino</h4>
+                                <span>$ 4.98</span>
+                            </div>
 
-                        <p className="box-data-text">The combination of coffee, milk, and palm sugar makes this drink have a delicious</p>
-                        <div className="box-data-sizes">
-                            <span>Size</span>
-                            <button className="box-sizes-button">Small</button>
-                            <button className="box-sizes-button">Large</button>
+                            <p className="box-data-text">The combination of coffee, milk, and palm sugar makes this drink have a delicious</p>
+                            <div className="box-data-sizes">
+                                <span>Size</span>
+                                <button className="box-sizes-button">Small</button>
+                                <button className="box-sizes-button">Large</button>
+                            </div>
+                            <button className={changeStyle} onClick={changePhrase}>{changeText}</button>
+                        </section>
+                    </section>
+                    <section className="box-information">
+                        <div className="box-data-image">
+                            <img className="image" src={coffee} alt="coffee"/>
+                            {/*<input type="number" name="quantity" min="0" value="0"/>*/}
                         </div>
-                        <button className={changeStyle} onClick={widthWindow < 768 ? changePhrase : listProducts}>{changeText}</button>
+                        <section className="box-data-details">
+                            <div className="box-values">
+                                <h4>Cappuccino</h4>
+                                <span>$ 4.98</span>
+                            </div>
+
+                            <p className="box-data-text">The combination of coffee, milk, and palm sugar makes this drink have a delicious</p>
+                            <div className="box-data-sizes">
+                                <span>Size</span>
+                                <button className="box-sizes-button">Small</button>
+                                <button className="box-sizes-button">Large</button>
+                            </div>
+                            <button className={changeStyle} onClick={changePhrase}>{changeText}</button>
+                        </section>
+                    </section>
+                    <section className="box-information">
+                        <div className="box-data-image">
+                            <img className="image" src={coffee} alt="coffee"/>
+                            {/*<input type="number" name="quantity" min="0" value="0"/>*/}
+                        </div>
+                        <section className="box-data-details">
+                            <div className="box-values">
+                                <h4>Cappuccino</h4>
+                                <span>$ 4.98</span>
+                            </div>
+
+                            <p className="box-data-text">The combination of coffee, milk, and palm sugar makes this drink have a delicious</p>
+                            <div className="box-data-sizes">
+                                <span>Size</span>
+                                <button className="box-sizes-button">Small</button>
+                                <button className="box-sizes-button">Large</button>
+                            </div>
+                            <button className={changeStyle} onClick={changePhrase}>{changeText}</button>
+                        </section>
+                    </section>
+                    <section className="box-information">
+                        <div className="box-data-image">
+                            <img className="image" src={coffee} alt="coffee"/>
+                            {/*<input type="number" name="quantity" min="0" value="0"/>*/}
+                        </div>
+                        <section className="box-data-details">
+                            <div className="box-values">
+                                <h4>Cappuccino</h4>
+                                <span>$ 4.98</span>
+                            </div>
+
+                            <p className="box-data-text">The combination of coffee, milk, and palm sugar makes this drink have a delicious</p>
+                            <div className="box-data-sizes">
+                                <span>Size</span>
+                                <button className="box-sizes-button">Small</button>
+                                <button className="box-sizes-button">Large</button>
+                            </div>
+                            <button className={changeStyle} onClick={changePhrase}>{changeText}</button>
+                        </section>
                     </section>
                 </section>
-                <section className="box-information">
-                    <div className="box-data-image">
-                        <img className="image" src={coffee} alt="coffee"/>
-                        {/*<input type="number" name="quantity" min="0" value="0"/>*/}
-                    </div>
-                    <section className="box-data-details">
-                        <div className="box-values">
-                            <h4>Cappuccino</h4>
-                            <span>$ 4.98</span>
-                        </div>
 
-                        <p className="box-data-text">The combination of coffee, milk, and palm sugar makes this drink have a delicious</p>
-                        <div className="box-data-sizes">
-                            <span>Size</span>
-                            <button className="box-sizes-button">Small</button>
-                            <button className="box-sizes-button">Large</button>
-                        </div>
-                        <button className={changeStyle} onClick={changePhrase}>{changeText}</button>
-                    </section>
-                </section>
-                <section className="box-information">
-                    <div className="box-data-image">
-                        <img className="image" src={coffee} alt="coffee"/>
-                        {/*<input type="number" name="quantity" min="0" value="0"/>*/}
-                    </div>
-                    <section className="box-data-details">
-                        <div className="box-values">
-                            <h4>Cappuccino</h4>
-                            <span>$ 4.98</span>
-                        </div>
-
-                        <p className="box-data-text">The combination of coffee, milk, and palm sugar makes this drink have a delicious</p>
-                        <div className="box-data-sizes">
-                            <span>Size</span>
-                            <button className="box-sizes-button">Small</button>
-                            <button className="box-sizes-button">Large</button>
-                        </div>
-                        <button className={changeStyle} onClick={changePhrase}>{changeText}</button>
-                    </section>
-                </section>
-                <section className="box-information">
-                    <div className="box-data-image">
-                        <img className="image" src={coffee} alt="coffee"/>
-                        {/*<input type="number" name="quantity" min="0" value="0"/>*/}
-                    </div>
-                    <section className="box-data-details">
-                        <div className="box-values">
-                            <h4>Cappuccino</h4>
-                            <span>$ 4.98</span>
-                        </div>
-
-                        <p className="box-data-text">The combination of coffee, milk, and palm sugar makes this drink have a delicious</p>
-                        <div className="box-data-sizes">
-                            <span>Size</span>
-                            <button className="box-sizes-button">Small</button>
-                            <button className="box-sizes-button">Large</button>
-                        </div>
-                        <button className={changeStyle} onClick={changePhrase}>{changeText}</button>
-                    </section>
-                </section>
-                <section className="box-information">
-                    <div className="box-data-image">
-                        <img className="image" src={coffee} alt="coffee"/>
-                        {/*<input type="number" name="quantity" min="0" value="0"/>*/}
-                    </div>
-                    <section className="box-data-details">
-                        <div className="box-values">
-                            <h4>Cappuccino</h4>
-                            <span>$ 4.98</span>
-                        </div>
-
-                        <p className="box-data-text">The combination of coffee, milk, and palm sugar makes this drink have a delicious</p>
-                        <div className="box-data-sizes">
-                            <span>Size</span>
-                            <button className="box-sizes-button">Small</button>
-                            <button className="box-sizes-button">Large</button>
-                        </div>
-                        <button className={changeStyle} onClick={changePhrase}>{changeText}</button>
-                    </section>
-                </section>
             </main>
 
             {overviewPackage && (

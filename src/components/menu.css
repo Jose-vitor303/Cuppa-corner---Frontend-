@@ -32,9 +32,6 @@
     width: 20px;
 }
 
-
-
-
 .box-data-image img{
     margin-right: auto;
     margin-left: auto;
@@ -47,6 +44,8 @@
 .box-product-image{
     display: flex;
     align-items: flex-end;
+    justify-content: left;
+
 }
 
 .box-data-details{
@@ -133,12 +132,34 @@
     border-radius: 10px;
 }
 
+.box-header-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 0.5rem;
+    padding-top: 1rem;
+    background-color: #F8F8F8;
+    height: 8vh;
+}
 
-@media screen and (min-width: 768px){
+.box-header-list li{
+    list-style-type: none;
+    font-weight: lighter;
+    color: #a9a0a0;
+    cursor: pointer;
+}
 
-    .box{
+.box-header-list li:hover{
+    color: #FFA16C;
+}
+
+
+@media screen and (min-width: 650px){
+
+    .box-data{
         display: grid;
-        grid-template-columns: 20% 55% 25%; /* Three equal columns */
+        grid-template-columns: 50% 25%; /* Three equal columns */
     }
 
     .box-data{
@@ -147,12 +168,11 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-around;
-        height: 83vh;
+        height: 88vh;
         margin-top: auto;
         overflow-y : scroll;
         padding: 0;
         background-color: #F8F8F8;
-        border-left: 1px solid #9a9292;
     }
 
     .box-data::-webkit-scrollbar {
@@ -167,7 +187,6 @@
         background: #FFA16C;
     }
 
-
     .box-information{
         background-color: #FFFFFF;
         display: flex;
@@ -178,9 +197,7 @@
         min-width: 320px;
         width: 30%;
         padding-top: 1rem;
-        margin-top: 1rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin: 1rem;
         border: 1px solid #F8F8F8;
         box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
     }
@@ -235,8 +252,21 @@
         padding: 0.5rem;
     }
 
-    .footer-desktop{
-        /*background-color: red;*/
-    }
 }
 
+@media screen and (min-width: 768px){
+
+}
+
+
+@media screen and (min-width: 1100px) {
+
+    .box {
+        display: grid;
+        grid-template-columns: 20% 55% 25%; /* Three equal columns */
+    }
+
+    .box-data-information {
+        background-color: #F8F8F8;
+    }
+}

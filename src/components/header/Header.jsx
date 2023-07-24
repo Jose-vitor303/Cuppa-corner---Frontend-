@@ -43,7 +43,7 @@ const Header = ()=>{
                             <li>Profile</li>
                         </div>
                     </section>
-                ) : ( windowWidth > 768 && (
+                ) : ( windowWidth > 1100 && (
                     <section className="box-hamburger">
                         <div className="list-element">
                             <li>Home</li>
@@ -59,12 +59,6 @@ const Header = ()=>{
                     <div/>
                 </div>
             </section>
-            <ul className="box-header-list">
-                <li>Coffee</li>
-                <li>Food</li>
-                <li>Snack</li>
-                <li>Dessert</li>
-            </ul>
         </header>
     )
 }
