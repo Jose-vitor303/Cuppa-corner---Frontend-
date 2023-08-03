@@ -9,6 +9,7 @@ import Registration from "./pages/registration/registration.jsx";
 import Menu from "./components/menu.jsx";
 import List from "./pages/menu/list/List.jsx";
 import { Window } from "./components/window/Window.jsx";
+import {TokenProvider} from "./components/token/TokenContext";
 
 
 const router = createBrowserRouter([
@@ -38,8 +39,10 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-      <Window>
-          <RouterProvider router={router} />
-      </Window>
+      <TokenProvider>
+          <Window>
+              <RouterProvider router={router} />
+          </Window>
+      </TokenProvider>
   </React.StrictMode>,
 )
